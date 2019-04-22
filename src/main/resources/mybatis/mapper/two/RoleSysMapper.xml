@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.transfer.dao.two.RoleSysMapper">
+  <resultMap id="BaseResultMap" type="com.example.transfer.entity.two.RoleSys">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="role_name" jdbcType="VARCHAR" property="roleName" />
+    <result column="describe_con" jdbcType="VARCHAR" property="describeCon" />
+  </resultMap>
+  <insert id="insertA" parameterType="roleSys">
+    INSERT INTO role_sys(role_name) VALUES (#{roleName});
+  </insert>
+</mapper>
